@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "41b9a1f4-1ec2-4d75-a907-eac23c201dd8",
+		"name": "CRUD_Sach",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21891428"
+	},
+	"item": [
+		{
+			"name": "localhost:8081/book/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY1NzU0MjUzMCwiaWF0IjoxNjU3NTI0NTMwfQ.qduvhOclAXWQUveIHpvTdywH91rqlUndx_5VgRWM8PcMIKQ7FLdjijt5K23Uz5YJ29lt7RpIbCDn2-OEBIYVQw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8081/book/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY1NzU0MjUzMCwiaWF0IjoxNjU3NTI0NTMwfQ.qduvhOclAXWQUveIHpvTdywH91rqlUndx_5VgRWM8PcMIKQ7FLdjijt5K23Uz5YJ29lt7RpIbCDn2-OEBIYVQw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/book/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"book",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "add Book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdBy\": \"nguyen nhu quynh\",\r\n    \"createdDate\": \"2019-11-21T01:00:00.000+00:00\",\r\n    \"modifiedBy\": \"nguyen nhu quynh\",\r\n    \"modifiedDate\": \"2020-11-21T02:00:00.000+00:00\",\r\n    \"name\":\"Co 500 nam nhu the\",\r\n    \"namXB\":\"2019\",\r\n    \"price\":103,\r\n    \"numTitle\":\"50\",\r\n    \"numNow\":\"12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdBy\": \"nguyen nhu quynh\",\r\n    \"createdDate\": \"2019-11-21T01:00:00.000+00:00\",\r\n    \"modifiedBy\": \"nguyen nhu quynh\",\r\n    \"modifiedDate\": \"2020-11-21T02:00:00.000+00:00\",\r\n    \"name\":\"\",\r\n    \"dob\":\"\",\r\n    \"story\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/author/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"author",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add Category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdBy\": \"nguyen nhu quynh\",\r\n    \"createdDate\": \"2019-11-21T01:00:00.000+00:00\",\r\n    \"modifiedBy\": \"nguyen nhu quynh\",\r\n    \"modifiedDate\": \"2020-11-21T02:00:00.000+00:00\",\r\n    \"name\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/category/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add NXB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdBy\": \"nguyen nhu quynh\",\r\n    \"createdDate\": \"2019-11-21T01:00:00.000+00:00\",\r\n    \"modifiedBy\": \"nguyen nhu quynh\",\r\n    \"modifiedDate\": \"2020-11-21T02:00:00.000+00:00\",\r\n    \"name\":\"\",\r\n    \"phone\":\"\",\r\n    \"address\":\"\",\r\n    \"email\":\"\",\r\n    \"repre\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/nxb/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nxb",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"createdBy\": \"nguyen nhu quynh\",\r\n    \"createdDate\": \"2019-11-21T01:00:00.000+00:00\",\r\n    \"modifiedBy\": \"nguyen nhu quynh\",\r\n    \"modifiedDate\": \"2020-11-21T02:00:00.000+00:00\",\r\n    \"username\":\"\",\r\n    \"password\":\"\",\r\n    \"fullName\":\"\",\r\n    \"email\":\"\",\r\n    \"phone\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/user/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
